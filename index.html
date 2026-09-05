@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>사탄 플랩</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header><b><i>✦</i> 사탄 플랩</b><span><em></em> ARCADE MODE</span></header>
+    <section class="game" aria-label="사탄 플랩 게임">
+      <canvas id="gameCanvas" width="420" height="760"></canvas>
+      <div id="hud"><div>점수<strong id="score">0</strong></div><div>최고 점수<strong id="best">0</strong></div></div>
+      <div id="start" class="overlay active"><small>쉬운 비행 모드</small><h1>사탄<br><b>플랩</b></h1><p>화면을 <strong>한 번 누르면 위로 날아올라</strong><br>파이프 사이를 지나가면 점수를 얻어!</p><div class="badge">✦ 조작은 한 가지만 기억해 <span>누르기 = 점프</span></div><button id="startBtn" aria-label="게임 시작">게임 시작 <b>→</b></button><label>화면 클릭 · 탭 · 스페이스바</label></div>
+      <div id="over" class="overlay"><small>비행이 끝났어</small><h2>다시 해볼까?</h2><div class="result"><div>이번 점수<strong id="final">0</strong></div><div>최고 점수<strong id="finalBest">0</strong></div></div><button id="restartBtn" aria-label="게임 다시 시작">다시 시작 <b>↻</b></button><button id="battleBtn" class="secondary" aria-label="사탄 배틀 시작">사탄 배틀 <b>⚔</b></button><label>버튼을 누르거나 스페이스바를 눌러 재시작</label></div>
+      <div id="battle" class="overlay battle-overlay"><small>레이드 배틀</small><h2>사탄 레이드</h2><p>여러 번 공격해서 강한 보스를 쓰러뜨려!</p><div class="battle-bars"><div><span>보스 체력</span><strong id="enemyHp">20</strong></div><div><span>내 체력</span><strong id="playerHp">5</strong></div><div><span>남은 공격</span><strong id="raidTurns">8</strong></div></div><div id="battleStatus" class="battle-status">첫 공격으로 레이드를 시작해봐</div><button id="attackBtn" aria-label="공격하기">레이드 공격 <b>⚡</b></button><button id="battleRestartBtn" class="secondary" aria-label="배틀 다시 시작">배틀 다시 시작</button><button id="battleCloseBtn" class="text-button" aria-label="배틀 닫기">게임오버로 돌아가기</button></div>
+      <div id="tip">눌러서 점프</div>
+    </section>
+    <footer><span>HELL / HUMAN SATAN</span><span>KEEP FLYING ◇</span></footer>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
